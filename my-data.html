@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="icon" href="favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Мои данные</title>
+    <link rel="preload" href="fonts/tt-interphases-pro-trial-variable-400.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231215030022">
+  </head>
+  <body class="page__body">
+    <div id="path" data-path="." hidden></div>
+    <header class="header ">
+      <div class="header__container container"><a class="header__logo" href=""><img src="img/content/logo.svg" alt=""></a>
+        <ul class="header__list">
+          <li class="header__item">
+            <button class="header__menu-open" type="button" data-modal="modal-header">
+              <svg width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#burger"></use>
+              </svg><span>Магазин</span>
+            </button>
+          </li>
+          <li class="header__item"><a class="header__link" href="">Компания</a></li>
+          <li class="header__item"><a class="header__link" href="">Помощь</a></li>
+        </ul>
+        <div class="header__wrapper">
+          <button class="header__button header__search-open" type="button" data-modal="modal-search">
+            <svg width="20" height="20" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <button class="header__button header__login-open" type="button" data-modal="modal-login">Войти</button>
+          <button class="header__button header__cart-open" type="button" data-modal="modal-cart">Корзина</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="account">
+        <div class="account__container container">
+          <div class="account__nav account-nav">
+            <ul class="account-nav__list">
+              <li class="account-nav__item"><a class="account-nav__link" href="">Заказы <span>3</span></a></li>
+              <li class="account-nav__item"><a class="account-nav__link account-nav__link--current" href="">Мои данные</a></li>
+            </ul>
+          </div>
+          <div class="account__content">
+            <h1 class="account__heading">Мои данные</h1>
+            <div class="account__data data">
+              <form class="data__form" data-form action="" novalidate>
+                    <div class="data__field-name field field--required">
+                      <input class="field__input validate-name required" id="data-name" type="text" name="name" placeholder=" ">
+                      <label class="field__label" for="data-name">Фамилия Имя Отчество</label><span class="field__error"></span>
+                    </div>
+                    <div class="data__field-phone field field--required">
+                      <input class="field__input validate-phone required" id="data-phone" type="tel" name="phone" placeholder=" ">
+                      <label class="field__label" for="data-phone">Телефон</label><span class="field__error"></span>
+                    </div>
+                    <div class="data__field-phone field field--required">
+                      <input class="field__input validate-email required" id="data-email" type="email" name="email" placeholder=" ">
+                      <label class="field__label" for="data-email">E-mail</label><span class="field__error"></span>
+                    </div>
+                <button class="data__submit button-accent" type="submit">Изменить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top-wrap">
+          <div class="footer__contacts"><a class="footer__phone" href="" data-phone><span>8 800 550 43 93</span></a>
+            <p class="footer__text">Бесплатный звонок из РФ</p>
+            <p class="footer__text">Режим работы с 8:00 до 18:00 по Мск</p>
+          </div>
+          <div class="footer__navigation-wrap">
+            <div class="footer__navigation">
+              <p class="footer__label">О Fabrizio</p>
+              <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="">О компании</a></li>
+                <li class="footer__item"><a class="footer__link" href="">Контакты</a></li>
+                <li class="footer__item"><a class="footer__link" href="">Бизнесу</a></li>
+              </ul>
+            </div>
+            <div class="footer__navigation">
+              <p class="footer__label">Fabrizio Club</p>
+              <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="">Вконтакте</a></li>
+                <li class="footer__item"><a class="footer__link" href="">Телеграм</a></li>
+                <li class="footer__item"><a class="footer__link" href="">Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__navigation-wrap">
+            <div class="footer__navigation">
+              <p class="footer__label">Информация</p>
+              <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="">Помощь</a></li>
+                <li class="footer__item"><a class="footer__link" href="">Оплата и доставка</a></li>
+                <li class="footer__item"><a class="footer__link" href="">Гарантия и возврат</a></li>
+                <li class="footer__item"><a class="footer__link" href="">Как сделать заказ</a></li>
+                <li class="footer__item"><a class="footer__link" href="">Узнать статус заказа</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom-wrap">
+          <div class="footer__small-wrap">
+            <p class="footer__small-text">© Fabrizio</p>
+            <p class="footer__small-text">2023. Все права защищены</p>
+          </div><a class="footer__small-text" href="">Правила и политика</a><a class="footer__small-text" href="">Карта сайта</a>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-sticky">
+      <button class="footer-sticky__cart" type="button" data-modal="modal-cart">Корзина 1</button>
+    </div><a class="footer-social" href="" aria-label="Наш ВКонтакте">
+      <svg width="25" height="25" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#vk"></use>
+      </svg></a>
+        <div class="modal" id="modal-header">
+          <div class="modal__header">
+            <div class="modal__header-wrap">
+              <button class="modal__header-close modal-close" type="button" aria-label="Закрыть модальное окно">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#modal-close"></use>
+                </svg>
+              </button><a class="modal__header-logo"><img src="img/content/logo.svg" alt=""></a>
+              <button class="modal__header-search" type="button" aria-label="Открыть поиск">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="modal-header">
+              <div class="modal-header__categories">
+                <button class="modal-header__category" type="button" aria-expanded="true">Женщинам</button>
+                <button class="modal-header__category" type="button" aria-expanded="false">Мужчинам</button>
+              </div>
+              <ul class="modal-header__list">
+                <li class="modal-header__item">
+                  <button class="modal-header__button" aria-expanded="true">Сумки
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <ul class="modal-header__links">
+                    <li><a href="">Классические</a></li>
+                    <li><a href="">Поясные</a></li>
+                    <li><a href="">Сумки-рюкзаки</a></li>
+                    <li><a href="">Рюкзаки</a></li>
+                    <li><a href="">Клатчи</a></li>
+                    <li><a href="">Сумка-портфель</a></li>
+                    <li><a href="">Шопперы</a></li>
+                    <li><a href="">Через плечо</a></li>
+                    <li><a href="">Дорожные</a></li>
+                    <li><a href="">Спортивные</a></li>
+                  </ul><a class="modal-header__all" href="">Все сумки</a>
+                </li>
+                <li class="modal-header__item">
+                  <button class="modal-header__button" aria-expanded="false">Аксессуары
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <ul class="modal-header__links">
+                    <li><a href="">Классические</a></li>
+                    <li><a href="">Поясные</a></li>
+                    <li><a href="">Сумки-рюкзаки</a></li>
+                    <li><a href="">Рюкзаки</a></li>
+                    <li><a href="">Клатчи</a></li>
+                    <li><a href="">Сумка-портфель</a></li>
+                    <li><a href="">Шопперы</a></li>
+                    <li><a href="">Через плечо</a></li>
+                    <li><a href="">Дорожные</a></li>
+                    <li><a href="">Спортивные</a></li>
+                  </ul>
+                </li>
+                <li class="modal-header__item">
+                  <button class="modal-header__button" aria-expanded="false">Одежда
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <ul class="modal-header__links">
+                    <li><a href="">Классические</a></li>
+                    <li><a href="">Поясные</a></li>
+                    <li><a href="">Сумки-рюкзаки</a></li>
+                    <li><a href="">Рюкзаки</a></li>
+                    <li><a href="">Клатчи</a></li>
+                    <li><a href="">Сумка-портфель</a></li>
+                    <li><a href="">Шопперы</a></li>
+                    <li><a href="">Через плечо</a></li>
+                    <li><a href="">Дорожные</a></li>
+                    <li><a href="">Спортивные</a></li>
+                  </ul><a class="modal-header__all" href="">Все сумки</a>
+                </li>
+                <li class="modal-header__item">
+                  <button class="modal-header__button modal-header__button--accent" aria-expanded="false">Скидки
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <ul class="modal-header__links">
+                    <li><a href="">Классические</a></li>
+                    <li><a href="">Поясные</a></li>
+                    <li><a href="">Сумки-рюкзаки</a></li>
+                    <li><a href="">Рюкзаки</a></li>
+                    <li><a href="">Клатчи</a></li>
+                    <li><a href="">Сумка-портфель</a></li>
+                    <li><a href="">Шопперы</a></li>
+                    <li><a href="">Через плечо</a></li>
+                    <li><a href="">Дорожные</a></li>
+                    <li><a href="">Спортивные</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="modal-header__pages">
+                <li class="modal-header__page-item"><a class="modal-header__page-link" href="">О компании</a></li>
+                <li class="modal-header__page-item"><a class="modal-header__page-link" href="">Контакты</a></li>
+                <li class="modal-header__page-item"><a class="modal-header__page-link" href="">Помощь</a></li>
+              </ul>
+              <div class="modal-header__bottom-wrap">
+                <p class="modal-header__region">Регион: Кировская обл</p>
+                <button class="modal-header__login-open" type="button">Войти в личный кабинет</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-filters">
+          <div class="modal__content modal__content--right">
+            <div class="modal__top-wrap">
+              <p class="modal__heading">Фильтры 2</p>
+              <button class="modal__close modal-close" type="button" aria-label="Закрыть модальное окно">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+            </div>
+            <form class="modal-filters" action="#" novalidate>
+              <ul class="modal-filters__list">
+                <li class="modal-filters__item">
+                  <button class="modal-filters__button" type="button" aria-expanded="true">Цена
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <div class="modal-filters__range-wrapper">
+                    <p class="modal-filters__range-wrap">
+                      <input class="modal-filters__range" id="filter-min" type="number" name="filter-min" value="1320" min="0" placeholder="0"> <span>₽</span>
+                    </p>
+                    <p class="modal-filters__range-wrap">
+                      <input class="modal-filters__range" id="filter-max" type="number" name="filter-max" value="19320" max="50000" placeholder="50000"> <span>₽</span>
+                    </p>
+                    <div class="modal-filters__slider"></div>
+                  </div>
+                </li>
+                <li class="modal-filters__item">
+                  <div class="modal-filters__radio-field">
+                    <input class="visually-hidden" id="filter-sale" name="sale" type="checkbox">
+                    <label class="modal-filters__radio-label" for="filter-sale">% Распродажа</label>
+                  </div>
+                </li>
+                <li class="modal-filters__item">
+                  <button class="modal-filters__button" type="button" aria-expanded="false">Материал
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <ul class="modal-filters__list1">
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter1-1" name="material" type="checkbox">
+                        <label class="modal-filters__label1" for="filter1-1">Кожа</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter1-2" name="material" type="checkbox">
+                        <label class="modal-filters__label1" for="filter1-2">Искусственная кожа</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter1-3" name="material" type="checkbox">
+                        <label class="modal-filters__label1" for="filter1-3">Экокожа</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter1-4" name="material" type="checkbox">
+                        <label class="modal-filters__label1" for="filter1-4">Ткань</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter1-5" name="material" type="checkbox">
+                        <label class="modal-filters__label1" for="filter1-5">Нейлон</label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="modal-filters__item">
+                  <button class="modal-filters__button" type="button" aria-expanded="false">Типы сумок
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <ul class="modal-filters__list2">
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter4-1" type="checkbox" name="type">
+                        <label class="modal-filters__label2" for="filter4-1">Классические</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter4-2" type="checkbox" name="type">
+                        <label class="modal-filters__label2" for="filter4-2">Поясные</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter4-3" type="checkbox" name="type">
+                        <label class="modal-filters__label2" for="filter4-3">Сумки-рюкзаки</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter4-4" type="checkbox" name="type">
+                        <label class="modal-filters__label2" for="filter4-4">Рюкзаки</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter4-5" type="checkbox" name="type">
+                        <label class="modal-filters__label2" for="filter4-5">Клатчи</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter4-6" type="checkbox" name="type">
+                        <label class="modal-filters__label2" for="filter4-6">Сумка-портфель</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter4-7" type="checkbox" name="type">
+                        <label class="modal-filters__label2" for="filter4-7">Шопперы</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter4-8" type="checkbox" name="type">
+                        <label class="modal-filters__label2" for="filter4-8">На руку</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter4-9" type="checkbox" name="type">
+                        <label class="modal-filters__label2" for="filter4-9">Через плечо</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter4-10" type="checkbox" name="type">
+                        <label class="modal-filters__label2" for="filter4-10">Дорожные</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter4-11" type="checkbox" name="type">
+                        <label class="modal-filters__label2" for="filter4-11">Спортивные</label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="modal-filters__item">
+                  <button class="modal-filters__button" type="button" aria-expanded="false">Цвет
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <ul class="modal-filters__list1">
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter5-1" name="color" type="checkbox">
+                        <label class="modal-filters__label1" for="filter5-1">Красный</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter5-2" name="color" type="checkbox">
+                        <label class="modal-filters__label1" for="filter5-2">Зеленый</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter5-3" name="color" type="checkbox">
+                        <label class="modal-filters__label1" for="filter5-3">Синий</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter5-4" name="color" type="checkbox">
+                        <label class="modal-filters__label1" for="filter5-4">Бежевый</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter5-5" name="color" type="checkbox">
+                        <label class="modal-filters__label1" for="filter5-5">Черный</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter5-6" name="color" type="checkbox">
+                        <label class="modal-filters__label1" for="filter5-6">Белый</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter5-7" name="color" type="checkbox">
+                        <label class="modal-filters__label1" for="filter5-7">Оранжевый</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter5-8" name="color" type="checkbox">
+                        <label class="modal-filters__label1" for="filter5-8">Бордовый</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item1">
+                      <div class="modal-filters__field1">
+                        <input class="visually-hidden" id="filter5-9" name="color" type="checkbox">
+                        <label class="modal-filters__label1" for="filter5-9">Фиолетовый</label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="modal-filters__item">
+                  <button class="modal-filters__button" type="button" aria-expanded="false">Размер
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <ul class="modal-filters__list2">
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter6-1" type="checkbox" name="size">
+                        <label class="modal-filters__label2" for="filter6-1">Классические</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter6-2" type="checkbox" name="size">
+                        <label class="modal-filters__label2" for="filter6-2">Поясные</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter6-3" type="checkbox" name="size">
+                        <label class="modal-filters__label2" for="filter6-3">Сумки-рюкзаки</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter6-4" type="checkbox" name="size">
+                        <label class="modal-filters__label2" for="filter6-4">Рюкзаки</label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="modal-filters__item">
+                  <button class="modal-filters__button" type="button" aria-expanded="false">Форма
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <ul class="modal-filters__list2">
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter7-1" type="checkbox" name="form">
+                        <label class="modal-filters__label2" for="filter7-1">Классические</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter7-2" type="checkbox" name="form">
+                        <label class="modal-filters__label2" for="filter7-2">Поясные</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter7-3" type="checkbox" name="form">
+                        <label class="modal-filters__label2" for="filter7-3">Сумки-рюкзаки</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter7-4" type="checkbox" name="form">
+                        <label class="modal-filters__label2" for="filter7-4">Рюкзаки</label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="modal-filters__item">
+                  <button class="modal-filters__button" type="button" aria-expanded="false">По назначению
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <ul class="modal-filters__list2">
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter8-1" type="checkbox" name="naz">
+                        <label class="modal-filters__label2" for="filter8-1">Классические</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter8-2" type="checkbox" name="naz">
+                        <label class="modal-filters__label2" for="filter8-2">Поясные</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter8-3" type="checkbox" name="naz">
+                        <label class="modal-filters__label2" for="filter8-3">Сумки-рюкзаки</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter8-4" type="checkbox" name="naz">
+                        <label class="modal-filters__label2" for="filter8-4">Рюкзаки</label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="modal-filters__item">
+                  <button class="modal-filters__button" type="button" aria-expanded="false">Стиль
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <ul class="modal-filters__list2">
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter9-1" type="checkbox" name="style">
+                        <label class="modal-filters__label2" for="filter9-1">Классические</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter9-2" type="checkbox" name="style">
+                        <label class="modal-filters__label2" for="filter9-2">Поясные</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter9-3" type="checkbox" name="style">
+                        <label class="modal-filters__label2" for="filter9-3">Сумки-рюкзаки</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter9-4" type="checkbox" name="style">
+                        <label class="modal-filters__label2" for="filter9-4">Рюкзаки</label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="modal-filters__item">
+                  <button class="modal-filters__button" type="button" aria-expanded="false">Тип ручек
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                  <ul class="modal-filters__list2">
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter10-1" type="checkbox" name="ruch">
+                        <label class="modal-filters__label2" for="filter10-1">Классические</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter10-2" type="checkbox" name="ruch">
+                        <label class="modal-filters__label2" for="filter10-2">Поясные</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter10-3" type="checkbox" name="ruch">
+                        <label class="modal-filters__label2" for="filter10-3">Сумки-рюкзаки</label>
+                      </div>
+                    </li>
+                    <li class="modal-filters__item2">
+                      <div class="modal-filters__field2">
+                        <input class="visually-hidden" id="filter10-4" type="checkbox" name="ruch">
+                        <label class="modal-filters__label2" for="filter10-4">Рюкзаки</label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <button class="modal-filters__submit button-accent" type="submit">Применить <span>2</span></button>
+            </form>
+          </div>
+        </div>
+        <div class="modal" id="modal-search">
+          <div class="modal__content modal__content--right">
+            <div class="modal__top-wrap">
+              <p class="modal__heading">Поиск</p>
+              <button class="modal__close modal-close" type="button" aria-label="Закрыть модальное окно">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__wrapper">
+              <form class="modal__search-form" action="#" novalidate>
+                    <div class="modal__field-search field">
+                      <input class="field__input" id="modal-search-search" type="text" name="search" placeholder="Что ищете?">
+                      <label class="visually-hidden" for="modal-search-search">Что ищете?</label><span class="field__error"></span>
+                      <button class="field__search-submit" type="submit">
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                      <button class="field__search-reset" type="reset">
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#modal-close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                <p class="modal__search-label">Популярные запросы</p>
+                <ul class="modal__search-list">
+                  <li class="modal__search-item"><a href="">Шоппер</a></li>
+                  <li class="modal__search-item"><a href="">Клатч</a></li>
+                  <li class="modal__search-item"><a href="">Для телефона</a></li>
+                  <li class="modal__search-item"><a href="">На длинном ремне</a></li>
+                  <li class="modal__search-item"><a href="">Бежевые</a></li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-login">
+          <div class="modal__content modal__content--right">
+            <div class="modal__top-wrap">
+              <p class="modal__heading">Вход в личный кабинет / Создание профиля</p>
+              <button class="modal__close modal-close" type="button" aria-label="Закрыть модальное окно">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__wrapper">
+              <form class="modal__login-form" action="#" data-form novalidate>
+                    <div class="modal__field-phone field field--required">
+                      <input class="field__input validate-phone required" id="modal-form-phone" type="tel" name="phone" placeholder=" ">
+                      <label class="field__label" for="modal-form-phone">Номер телефона</label><span class="field__error"></span>
+                    </div>
+                <button class="modal__login-submit button-alternate" type="submit">Продолжить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-cart">
+          <div class="modal__content modal__content--right">
+            <div class="modal__top-wrap">
+              <p class="modal__heading">Корзина 2</p>
+              <button class="modal__close modal-close" type="button" aria-label="Закрыть модальное окно">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__wrapper">
+              <ul class="modal__cart-list">
+                <li class="modal__cart-item">
+                  <div class="modal__cart-image">
+                    <picture>
+                      <source srcset="img/content/card-image-01.jpg" type="image/webp"><img src="img/content/card-image-01.jpg" alt="">
+                    </picture>
+                  </div>
+                  <dl class="modal__cart-terms">
+                    <div class="modal__cart-term">
+                      <dt>Название</dt>
+                      <dd>Ember</dd>
+                    </div>
+                    <div class="modal__cart-term">
+                      <dt>Материал</dt>
+                      <dd>Текстиль</dd>
+                    </div>
+                    <div class="modal__cart-term">
+                      <dt>Цвет</dt>
+                      <dd>Красный</dd>
+                    </div>
+                  </dl>
+                  <div class="modal__cart-wrapper">
+                    <div class="modal__cart-stepper stepper">
+                      <button class="stepper__button" aria-lable="Уменьшить на 1">
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#minus"></use>
+                        </svg>
+                      </button>
+                      <input class="stepper__count" type="number" value="1" min="0">
+                      <button class="stepper__button" aria-lable="Увеличить на 1">
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#plus"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="modal__cart-price">3 310 ₽</p>
+                  </div>
+                </li>
+                <li class="modal__cart-item">
+                  <div class="modal__cart-image">
+                    <picture>
+                      <source srcset="img/content/card-image-02.jpg" type="image/webp"><img src="img/content/card-image-02.jpg" alt="">
+                    </picture>
+                  </div>
+                  <dl class="modal__cart-terms">
+                    <div class="modal__cart-term">
+                      <dt>Название</dt>
+                      <dd>EVA</dd>
+                    </div>
+                    <div class="modal__cart-term">
+                      <dt>Материал</dt>
+                      <dd>Натуральная кожа</dd>
+                    </div>
+                    <div class="modal__cart-term">
+                      <dt>Цвет</dt>
+                      <dd>Черная</dd>
+                    </div>
+                  </dl>
+                  <div class="modal__cart-wrapper">
+                    <div class="modal__cart-stepper stepper">
+                      <button class="stepper__button" aria-lable="Уменьшить на 1">
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#minus"></use>
+                        </svg>
+                      </button>
+                      <input class="stepper__count" type="number" value="1" min="0">
+                      <button class="stepper__button" aria-lable="Увеличить на 1">
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#plus"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="modal__cart-price">11 230 ₽</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="modal__cart-result">
+                <div class="modal__cart-info">
+                  <p>Без учета возможной стоимости доставки</p>
+                  <p>Итого <span>14 540 ₽</span></p>
+                </div><a class="modal__cart-link button-accent" href="">Перейти к оформлению</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-product-1">
+          <div class="modal__content modal__content--left">
+            <div class="modal__top-wrap">
+              <p class="modal__heading">Характеристики</p>
+              <button class="modal__close modal-close" type="button" aria-label="Закрыть модальное окно">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__product modal__product--1">
+              <div class="modal__product-image">
+                <picture>
+                  <source srcset="img/content/modal-product-01.jpg" type="image/webp"><img src="img/content/modal-product-01.jpg" alt="">
+                </picture>
+              </div>
+              <dl class="modal__product-terms">
+                <div class="modal__product-term">
+                  <dt>Габариты</dt>
+                  <dd>Ш 20см <br> Г 6см <br> В 12см</dd>
+                </div>
+                <div class="modal__product-term">
+                  <dt>Фурнитура</dt>
+                  <dd>Металлическая, хромированная</dd>
+                </div>
+                <div class="modal__product-term">
+                  <dt>Материал</dt>
+                  <dd>Натуральная кожа</dd>
+                </div>
+                <div class="modal__product-term">
+                  <dt>Карманы</dt>
+                  <dd>Внутренний карман на молнии. Два внутренних кармана под смартфон и другие аксессуары.</dd>
+                </div>
+                <div class="modal__product-term">
+                  <dt>Подклада</dt>
+                  <dd>Полиэстр</dd>
+                </div>
+                <div class="modal__product-term">
+                  <dt>Цвет</dt>
+                  <dd>Жёлтый</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-product-2">
+          <div class="modal__content modal__content--left">
+            <div class="modal__top-wrap">
+              <p class="modal__heading">Доставка и оплата</p>
+              <button class="modal__close modal-close" type="button" aria-label="Закрыть модальное окно">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__product modal__product--2">
+              <ul class="modal__product-list">
+                <li class="modal__product-item">
+                  <p class="modal__product-label">Доставка: Кировская обл</p>
+                  <dl class="modal__product-terms">
+                    <div class="modal__product-term">
+                      <dt>Пункты  выдачи</dt>
+                      <dd>Если сумма заказа меньше 5000 ₽, стоимость доставки 500 ₽, если больше 5000 ₽ — 4 дня</dd>
+                    </div>
+                    <div class="modal__product-term">
+                      <dt>Курьерская доставка</dt>
+                      <dd>200 ₽ — 3 дня</dd>
+                    </div>
+                    <div class="modal__product-term">
+                      <dt>Самовывоз</dt>
+                      <dd>Бесплатно (Из шоу-рума в г. Киров) — сегодня.</dd>
+                    </div>
+                  </dl>
+                </li>
+                <li class="modal__product-item">
+                  <p class="modal__product-label">Варианты оплаты</p>
+                  <ul class="modal__product-sublist">
+                    <li class="modal__product-subitem">Банковской картой</li>
+                    <li class="modal__product-subitem">Наличными при получении</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-product-3">
+          <div class="modal__content modal__content--left">
+            <div class="modal__top-wrap">
+              <p class="modal__heading">Порядок обмена и возврата</p>
+              <button class="modal__close modal-close" type="button" aria-label="Закрыть модальное окно">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__product modal__product--3">
+              <div class="modal__product-content">
+                <p>Возврат или обмен товара ненадлежащего качества осуществляется в соответствии со статьями 18-24 Федерального Закона «О защите прав потребителей».</p>
+                <ol>
+                  <li>
+                    <p>Сообщить нам о возврате или обмене на почту <a href="mailto:bagfabrizio@gmail.com">bagfabrizio@gmail.com</a> Пожалуйста, кратко опишите Вашу ситуацию (сообщите номер заказа), чтобы мы могли оперативно Вам ответить.</p>
+                    <ol>
+                      <li>У товара обнаружен брак или Вы хотите вернуть товар надлежащего качества?</li>
+                      <li>Вы хотите обменять товар или вернуть денежные средства.</li>
+                      <li>В случае обнаружения ненадлежащего качества, по возможности, приложите фотографию.</li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>Скачать и заполнить заявление на возврат</p>
+                    <ul>
+                      <li><a href="">Заявление на возврат товара надлежащего качества</a></li>
+                      <li><a href="">Заявление на возврат товара ненадлежащего качества</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Дождаться ответа нашей компании на Ваше обращение. Мы ответим на Ваше письмо в течение 2-х рабочих дней, и сообщим как и куда можно осуществить возврат. Осуществить возврат можно двумя способами: самостоятельно привезти товар к нам, либо отправить Почтой России.</p>
+                  </li>
+                  <li>
+                    <p>Осуществить возврат. Перед возвратом, проверьте, пожалуйста, полную комплектность товара. Приложите заявление, кассовый и товарный чеки.</p>
+                  </li>
+                  <li>
+                    <p>Получить денежные средства или товар для обмена. В случае приезда к нам в офис обмен или возврат денежных средств производится на месте. В случае отправки Почтой России в течение 10 дней с момента получения нами товара.</p>
+                  </li>
+                </ol><a class="modal__product-more" href="">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-product-4">
+          <div class="modal__content modal__content--left">
+            <div class="modal__top-wrap">
+              <p class="modal__heading">Гарантия качества</p>
+              <button class="modal__close modal-close" type="button" aria-label="Закрыть модальное окно">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__product modal__product--4">
+              <div class="modal__product-image">
+                <picture>
+                  <source srcset="img/content/modal-product-04.jpg" type="image/webp"><img src="img/content/modal-product-04.jpg" alt="">
+                </picture>
+              </div>
+              <p class="modal__product-big-label">Гарантия 365 дней</p>
+              <div class="modal__product-content">
+                <p>При покупке Вы получаете гарантийный талон, в котором указаны сроки возврата товара при определенных обстоятельствах.</p>
+                <p>Если возникили сомнения в натуральности кожи, Вы можете отнести её на независимую экспертизу и при обнаружении ненатуральности кожи, мы вернём двойную её стоимость.</p>
+                <p>Товары FABRIZIO, изготовленные по специальному заказу, возврату не подлежат. Обмен возможен только в случае обнаружения брака на изделии, ошибки в тексте или дизайне принта по вине производства.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script src="js/bundle.min.js?_v=20231215030022"></script>
+    <script src="js/switcher.js?_v=20231215030022"></script>
+  </body>
+</html>
